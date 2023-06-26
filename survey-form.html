@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles/survey-form.css'></link>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id='title'>Awesom-o Survey Form </h1>
+    <p id='description'>Thank you for participation in improving our improvement of algorithms in statistics</p>
+    <form action=' https://survey-form.freecodecamp.rocks' method='post' id='survey-form'>
+      <fieldset class='personalInfo'>
+        <p class='survGuide'>Personal imformation</p>
+        <label for='name' id="name-label"> Name:<input type='text' id='name' name='survName' placeholder='(Enter your name)' required /></label>
+        <label for='email' id="email-label"> Email:<input type='email' id='email' name='survMail' required placeholder='(Enter your email address)'/></label>
+        <label for='number'id="number-label"> Your age:(optional)<input type='number' id='number' name='survAge' min=15 max=85 placeholder='(Write a number)' /></label>
+        <label for='dropdown'> Please choose your current status:
+          <select name='dropdown' id='dropdown'>
+            <option value="">(Choose one)</option>
+            <option value="1">Schooler/Student</option>
+            <option value="2">Unemployed</option>
+            <option value="3">Self-emoloyed/businessman</option>
+            <option value="4">Hired worker</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class='survGuide'>Please answer the following questions:</p>
+        <div id='answField'>
+          <p>What is your overall general life satisfaction level?</p>
+          <label for='satisfaction-1'><input type='radio' name='satisfaction' id='satisfaction-1' value='1' />Can't get no</label>
+          <label for='satisfaction-2'><input type='radio' name='satisfaction' id='satisfaction-2' value='2' />More not than yes</label>
+          <label for='satisfaction-3'><input type='radio' name='satisfaction' id='satisfaction-3' value='3' />Acceptable level</label>
+          <label for='satisfaction-4'><input type='radio' name='satisfaction' id='satisfaction-4' value='4' />Life is going well</label>
+          <label for='satisfaction-5'><input type='radio' name='satisfaction' id='satisfaction-5' value='5' />I'm the King Of The World</label>
+        </div>
+        <p class='survGuide'>What grinds your gears the most? (You can choose multiple variants) </p>
+        <div class='answField'>
+          <label for='neighbors'><input type=checkbox name="neighbors" id="neighbors" value='neighbors'/> Noisy neighbors</label>
+          <label for='kids'><input type=checkbox name="kids" id="kids" value='kids' /> Kids aren't alright</label>
+          <label for='jobs'><input type=checkbox name="jobs" id="jobs" value='jobs' /> No one wants to work anymore</label>
+          <label for='immigrants'><input type=checkbox name="immigrants" id="immigrants" value='immigrants'/> Immigrants are taking our jobs</label>
+          <label for='spine'><input type=checkbox name="spine" id="spine" value='spine' /> My back hurts</label>
+          <label for='corporations'><input type=checkbox name="corporations" id="corporations" value='corporations'/> Big corporations chasing only profits</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+                <p class='survGuide'>Feel free to share your thoughts below.</p>
+        <label for='thoughts'>
+          <textarea id='thoughts' name='thoughts' rows=10 cols=50 placeholder='(Write your answer here)...'></textarea>
+        </label>
+      </fieldset>
+      <p class='tos'>By clicking submit button you agree to our <a href='chrome://terms' target=_blank>Terms and Conditions</a></p>
+      <input type='submit' value='Submit' id='submit' />
+    </form>
+</body>
+</html>
