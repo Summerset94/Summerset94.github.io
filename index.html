@@ -4,43 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="styles/index.css"></link>
+
+  <script src="https://kit.fontawesome.com/34116f3a29.js" crossorigin="anonymous"></script>
+  
   <title>Portfolio page</title>
 </head>
 <body>
+
   <header>
     <nav id="navbar">
-      <a href="#welcome-section">About</a>
-      <a href="#projects">Works</a>
-      <a href="#contacts">Contact</a>
+      <a href="#welcome-section" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">My projects</a>
+      <a href="#contacts" class="nav-link">Contact</a>
     </nav>
   </header>
+
   <main>
     <section id="welcome-section">
       <h1>Hello I'm Summerset</h1>
       <h4>a web developer</h4>
     </section>
+
     <section id="projects">
-     
-      <div class="project-tile">
-        <a href="survey-form.html"></a>
-      </div>
-      <div class="project-tile">
-        <a href="tech-doc-page.html"></a>
-      </div>
-      <div class="project-tile">
-        <a href="tribute-page.html"></a>
-      </div>
-      <div class="project-tile">
-        <a href="product-landing.html"></a>
+      <h2>These are my mini-projects</h2>
+      <div class="project-container">  
+        <div class="project-tile">
+          <a href="survey-form.html">
+            <figure>
+              <img class="project-preview" src="images/survey-preview.PNG" alt="Survey form page preview">
+              <figcaption>Survey form</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="tech-doc-page.html">
+            <figure>
+              <img class="project-preview" src="images/techDoc-preview.PNG" alt="technical documentation page preview">
+              <figcaption>Technical documentation</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="tribute-page.html">
+            <figure>
+              <img class="project-preview" src="images/tribute-preview.PNG" alt="tribute page preview">
+              <figcaption>Tribute page</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="product-landing.html">
+            <figure>
+              <img class="project-preview" src="images/product-preview.PNG" alt="product page preview">
+              <figcaption>Product landing page</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="theme-switcher.html">
+            <figure>
+              <img class="project-preview" src="images/colorSwitcher-preview.png" alt="css color switcher preview">
+              <figcaption>CSS theme switcher</figcaption>
+            </figure>
+          </a>
+        </div>
       </div>             
     </section>
-    <section id="contacts">
 
+    <section id="contacts">
+      <h2>Follow me on social network:</h2>
+      <div class="socials">
+        <a id="profile-link" class="social-link" href="https://www.freecodecamp.org/Summerset94" target="_blank"> <i class="fa-brands fa-free-code-camp"></i> freeCodeCamp</a>
+        <a href="https://summerset94.github.com" class="social-link" target="_blank"> <i class="fa-brands fa-square-github"></i> Github</a>        
+      </div>
     </section>
   </main>
-  <footer>
 
+  <footer>
+    <p class="disc">
+        All trademarks, logos and brand names are the property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names,trademarks and brands does not imply endorsement.<br>
+        By Summerset94. 2023
+    </p>      
   </footer>
 </body>
 </html>
