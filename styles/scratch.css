@@ -1,0 +1,34 @@
+* {
+  border: 1px solid black;
+}
+
+h1 {
+  font-family: 'Brush Script MT', cursive;
+}
+
+.tilefield {
+  width: 960px;
+  height: 960px;
+}
+
+aside { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input, button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.scratchTile {
+  border: 0.05px solid black;
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  height: 100%
+}
