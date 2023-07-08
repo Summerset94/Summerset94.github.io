@@ -149,7 +149,7 @@ function deleteElementById(elementId) {
 
 //
 document.addEventListener("DOMContentLoaded", () => {
-  addBookToLibrary("The Hobbit", "J. R. R. Tolkien", 1937, 310);
-  addBookToLibrary("Fear and Loathing in Las Vegas", "Hunter S. Thompson", 1971, 204);
+  addBookToLibrary("The Hobbit", "J. R. R. Tolkien", 310, 1937);
+  addBookToLibrary("Fear and Loathing in Las Vegas", "Hunter S. Thompson", 204, 1971);
   displayBooks();
 });
